@@ -43,6 +43,23 @@ Rename them as `file1.gbff` and `file2.gbff`.
 python3 locustag_mapping.py
 ```
 
+### **Steps in Detail:**
+
+1. **Extract CDS sequences from GBFF files**
+   - The script uses Bioawk to extract CDS sequences and locus tags from the provided GBFF files.
+   - These sequences are saved as `cds1.fasta` and `cds2.fasta`.
+
+2. **Create BLAST databases**
+   - The extracted CDS sequences are formatted into BLAST databases (`db1` and `db2`).
+
+3. **Run Reciprocal BLAST Searches**
+   - BLAST is used to align the sequences from `cds1.fasta` against `db2` and vice versa.
+   - Results are saved in `blast1_vs_2.txt` and `blast2_vs_1.txt`.
+
+4. **Identify Reciprocal Best Hits (RBH)**
+   - The script analyzes BLAST results to find reciprocal best hits (RBH).
+   - These are stored in `locus_tag_mappings.tsv`.
+
 ### **Output:**
 The script will generate the following files:
 
