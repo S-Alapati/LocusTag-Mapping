@@ -101,13 +101,12 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## **Contact**
 
-For questions or issues, please open an issue on GitHub or contact [your email].
+For questions or issues, please open an issue on GitHub.
 
 ---
 
 ## **GitHub Repository Structure**
 
-Your GitHub repository should look like this:
 ```
 locus-tag-mapping/
 ├── locustag_mapping.py
